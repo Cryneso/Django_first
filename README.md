@@ -7,10 +7,3 @@ eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 # Запуск проекта
-1. 123
-2. sf
-3. sd
-4. fsg
-5. df
-6. sdf
-7. l,k
