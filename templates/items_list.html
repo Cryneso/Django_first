@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block breadcrumbs %}
+  <li><a href="{% url 'home' %}">Главная</a></li>
+  <li>Список товаров</li>
+{% endblock %}
+
+{% block content %}
+<h2>Список товаров</h2>
+    <table>
+    <tr>
+    {% for item in items %}
+        <td>
+        <div class="card">
+            <div class="container">
+                <h4><b><a href="{% url 'item-page' id=item.id %}">{{ item.name }}</a></b></h4>
+                <p>{{ item.brand }}</p>
+            </div>
+        </div>
+        </td>
+    {% endfor %}
+    </tr>
+    </table>
+    <br>
+    <b><a href="{% url 'home' %}">На главную</a></b>
+{% endblock %}

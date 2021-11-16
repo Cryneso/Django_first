@@ -1,0 +1,16 @@
+<html lang="ru" translate="no">
+<head>
+    <meta charset="UTF-8">
+    {% include 'header.html' %}
+</head>
+<body>
+<ul class="breadcrumb">
+  {% block breadcrumbs %}
+  {% endblock %}
+</ul>
+  {% block content %}
+  {% endblock %}
+
+  {% include 'footer.html' %}
+</body>
+</html>
